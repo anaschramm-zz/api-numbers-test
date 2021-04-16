@@ -37,10 +37,46 @@ Para instalar o projeto na sua máquina, basta instalar todas as dependências p
   ```bash
 $ npm install
   ```
-  
-## Rodando o projeto
-Para rodar o projeto, basta utilizar o seguinte comando.
+
+## Instalando o Allure
+O Allure foi utilizado para gerar relatórios de testes.
+
+* <b>Instalação do Allure no Linux</b>
+Para instalar basta rodar os três comandos no terminal.
+
+   ```bash
+$ sudo apt-add-repository ppa:qameta/allure
+$ sudo apt-get update 
+$ sudo apt-get install allure
+  ```
+
+* <b>Instalação do Allure no Windows</b>
+
+1. Baixar a última versão do allure-commandline em formato zip no link https://search.maven.org/search?q=g:io.qameta.allure
+2. Descompactar em uma pasta os arquivos do zip.
+3. Navegar até a pasta bin.
+4. E adicionar o diretório da pasta bin ao PATH das variáveis de ambiente.
+
+OBS: Caso o projeto esteja aberto, é necessário reiniciá-lo.
+
+* <b>Checar a instalação do Allure</b>
 
   ```bash
-$ npm run cy:open
+$ allure --version
+  ```
+
+## Rodando o projeto
+Para rodar o projeto, basta utilizar os seguintes comandos.
+
+1. Para rodar a etapa de testes
+  ```bash
+$ npm run test
+  ```
+2. Para gerar os relatórios no allure
+  ```bash
+$ npm run allure:report
+  ```
+3. Para limpar os arquivos gerados
+  ```bash
+$ npm run allure:clear
   ```

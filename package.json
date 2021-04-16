@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx cypress run --config video=false,integrationFolder=cypress/integration --env allure=true --browser chrome",
+    "allure:report": "allure serve && allure generate allure-results --clean -o allure-report && allure open",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
     "cy:open": "cypress open"
   },
   "author": "",
@@ -12,5 +14,8 @@
   "dependencies": {
     "cypress": "^7.1.0",
     "extenso": "^2.0.1"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.5.0"
   }
 }
