@@ -41,7 +41,7 @@ $ npm install
 ## Instalando o Allure
 O Allure foi utilizado para gerar relatórios de testes.
 
-* <b>Instalação do Allure no Linux</b>
+### Instalação do Allure no Linux
 Para instalar basta rodar os três comandos no terminal.
 
    ```bash
@@ -50,7 +50,7 @@ $ sudo apt-get update
 $ sudo apt-get install allure
   ```
 
-* <b>Instalação do Allure no Windows</b>
+### Instalação do Allure no Windows
 
 1. Baixar a última versão do allure-commandline em formato zip no link https://search.maven.org/search?q=g:io.qameta.allure
 2. Descompactar em uma pasta os arquivos do zip.
@@ -59,7 +59,7 @@ $ sudo apt-get install allure
 
 OBS: Caso o projeto esteja aberto, é necessário reiniciá-lo.
 
-* <b>Checar a instalação do Allure</b>
+### Checar a instalação do Allure
 
   ```bash
 $ allure --version
